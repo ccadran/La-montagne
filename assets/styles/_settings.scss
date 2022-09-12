@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "font1";
+    src: url(../fonts/font.txt);
+}
+
+$font1: "font1", sans-serif;
+$color1: rgb(130, 129, 130);
+$color2: rgb(234, 232, 234);
+$color3: #fff;
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: url(../img/bg.jpg) top/cover fixed;
+}

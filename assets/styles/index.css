@@ -1,1 +1,7 @@
-/*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: "font1";
+  src: url(../fonts/font.txt);
+}
+body {
+  background: url(../img/bg.jpg) top/cover fixed;
+}/*# sourceMappingURL=index.css.map */
