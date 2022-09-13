@@ -7,13 +7,20 @@ $font1: "font1", sans-serif;
 $color1: rgb(130, 129, 130);
 $color2: rgb(234, 232, 234);
 $color3: #fff;
+$color4: #000;
 
 @mixin center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    list-style: none;
+}
 body {
-    background: url(../img/bg.jpg) top/cover fixed;
+    background: url(../img/bg.jpg) bottom/cover fixed;
 }

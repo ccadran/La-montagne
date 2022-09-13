@@ -1,0 +1,13 @@
+.section1 {
+    max-width: 70%;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    display: flex;
+    background: $color2;
+    display: block;
+    img {
+        height: 100px;
+    }
+}
