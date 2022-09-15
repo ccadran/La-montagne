@@ -24,3 +24,15 @@ $color4: #000;
 body {
     background: url(../img/bg.jpg) bottom/cover fixed;
 }
+.button {
+    padding: 10px;
+    border: 1.5px solid $color4;
+    text-transform: uppercase;
+    display: flex;
+    margin: 0 auto;
+    margin: 0 auto;
+    font-weight: 800;
+    font-family: $font1;
+    letter-spacing: 1px;
+    background: $color3;
+}

@@ -14,6 +14,19 @@ body {
   background: url(../img/bg.jpg) bottom/cover fixed;
 }
 
+.button {
+  padding: 10px;
+  border: 1.5px solid #000;
+  text-transform: uppercase;
+  display: flex;
+  margin: 0 auto;
+  margin: 0 auto;
+  font-weight: 800;
+  font-family: "font1", sans-serif;
+  letter-spacing: 1px;
+  background: #fff;
+}
+
 .main-header {
   display: flex;
   align-items: center;
@@ -114,9 +127,153 @@ nav .ul-right i:hover {
   align-items: center;
   margin: 0 auto;
   display: flex;
-  background: rgb(234, 232, 234);
+  background: #fff;
   display: block;
+  margin: 0 auto;
+}
+.section1 h4 {
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+}
+.section1 h4::before {
+  content: "";
+  position: absolute;
+  height: 0.5px;
+  background: rgb(130, 129, 130);
+  width: 20%;
+  bottom: 50%;
+  transform: translateX(45%);
+}
+.section1 h4::after {
+  content: "";
+  position: absolute;
+  height: 0.5px;
+  background: rgb(130, 129, 130);
+  width: 20%;
+  bottom: 50%;
+  transform: translateX(-145%);
+}
+.section1 h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.section1 p {
+  width: 40%;
+  margin: 0 auto;
+  padding: 30px 0;
+  line-height: 30px;
+  text-align: center;
 }
 .section1 img {
-  height: 100px;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section1 button {
+  margin-top: 20px;
+}
+
+.section2 {
+  padding-top: 25px;
+  background: #fff;
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+.section2::before {
+  content: "";
+  height: 1px;
+  background: rgb(130, 129, 130);
+  width: 100%;
+  position: absolute;
+}
+.section2 img {
+  height: 50px;
+}
+.section2 .l-container {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+.section2 .l-container .l-element {
+  display: block;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.section2 .l-container .l-element h4 {
+  font-style: italic;
+  font-weight: 400;
+}
+.section2 .l-container .l-element h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 20px 0;
+}
+.section2 .l-container .l-element img {
+  height: 80%;
+  max-width: 80%;
+}
+.section2 .l-container .l-element p {
+  padding: 50px 0;
+  line-height: 30px;
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+.section2 .r-container {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  position: relative;
+}
+.section2 .r-container:after {
+  content: "";
+  height: 1px;
+  background: rgb(130, 129, 130);
+  width: 100%;
+  position: absolute;
+  transform: rotate(90deg);
+  left: -50%;
+  bottom: 50%;
+  overflow: hidden;
+}
+.section2 .r-container .r-element {
+  display: block;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.section2 .r-container .r-element h4 {
+  font-style: italic;
+  font-weight: 400;
+}
+.section2 .r-container .r-element h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 20px 0;
+}
+.section2 .r-container .r-element img {
+  height: 80%;
+  max-width: 80%;
+}
+.section2 .r-container .r-element p {
+  padding: 50px 0;
+  line-height: 30px;
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */
