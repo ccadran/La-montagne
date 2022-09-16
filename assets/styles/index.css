@@ -276,4 +276,73 @@ nav .ul-right i:hover {
   max-width: 80%;
   text-align: center;
   margin: 0 auto;
+}
+
+footer {
+  height: 700px;
+  width: 70%;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 50px auto;
+  padding: 50px 0;
+}
+footer .form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "n" "e" "m";
+  width: 100%;
+}
+footer .form #name {
+  grid-area: n;
+}
+footer .form #email {
+  grid-area: e;
+}
+footer .form #message {
+  grid-area: m;
+}
+footer .contact-container {
+  height: 100%;
+}
+footer .contact-container .box-contact {
+  padding-left: 20px;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin-left: 100px;
+  text-align: center;
+}
+footer .contact-container .box-contact h5 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: right;
+  align-items: center;
+  display: flex;
+}
+footer .contact-container .box-contact p {
+  text-align: left;
+  margin-left: 100px;
+}
+footer .contact-container .box-contact ul {
+  text-align: left;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+}
+footer .contact-container .box-contact ul li {
+  padding-right: 15px;
+}
+footer .contact-container .box-contact ul li a {
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */
