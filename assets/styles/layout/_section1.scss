@@ -1,59 +1,53 @@
 .section1 {
-    max-width: 70%;
-    justify-content: space-between;
-    align-items: center;
-
+    width: 85%;
     margin: 0 auto;
-    display: flex;
-    background: $color3;
-    display: block;
-    margin: 0 auto;
+    background: $white1;
 
-    h4 {
-        font-style: italic;
-        font-weight: 500;
-        text-align: center;
-        padding: 50px 0;
+    span {
+        padding: 70px 0;
         position: relative;
-        &::before {
+        display: block;
+
+        &:before,
+        &:after {
             content: "";
             position: absolute;
-            height: 0.5px;
-            background: $color1;
-            width: 20%;
-            bottom: 50%;
-            transform: translateX(45%);
+            width: 37%;
+            height: 1px;
+            background: $grey1;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @media screen and (max-width: 700px) {
+                width: 30%;
+            }
+            @media screen and (max-width: 700px) {
+                width: 24%;
+            }
         }
-        &::after {
-            content: "";
-            position: absolute;
-            height: 0.5px;
-            background: $color1;
-            width: 20%;
-            bottom: 50%;
-            transform: translateX(-145%);
+        &:before {
+            left: 0;
+        }
+        &:after {
+            right: 0;
         }
     }
     h2 {
-        font-size: 4rem;
-        text-transform: uppercase;
-        text-align: center;
-        width: 50%;
-        margin: 0 auto;
+        @include title;
+        font-size: 3rem;
+
+        @media screen and (max-width: 700px) {
+            font-size: 1.5rem;
+        }
     }
     p {
-        width: 40%;
-        margin: 0 auto;
-        padding: 30px 0;
-        line-height: 30px;
-        text-align: center;
+        width: 60%;
+        margin: 30px auto;
+        line-height: 35px;
+        font-style: italic;
+        font-size: 0.8rem;
     }
-    img {
-        width: 70%;
-        margin: 0 auto;
-        @include center;
-    }
-    button {
-        margin-top: 20px;
+    .btn {
+        margin: 50px 0 90px;
     }
 }

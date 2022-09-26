@@ -1,98 +1,32 @@
 .section2 {
-    padding-top: 25px;
-    background: $color3;
-    width: 70%;
-    display: flex;
-    margin: 0 auto;
-    position: relative;
-    &::before {
-        content: "";
-        height: 1px;
-        background: $color1;
-        width: 100%;
-        position: absolute;
-    }
-    img {
-        height: 50px;
-    }
-    .l-container {
-        display: flex;
-        margin: 0 auto;
-        padding-top: 50px;
-        padding-bottom: 200px;
-        .l-element {
-            display: block;
-            align-items: center;
-            text-align: center;
-            width: 80%;
-            margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-top: 1px solid $grey1;
 
-            h4 {
-                font-style: italic;
-                font-weight: 400;
-            }
-            h3 {
-                text-transform: uppercase;
-                font-size: 2rem;
-                padding: 20px 0;
-            }
-            img {
-                height: 80%;
-                max-width: 80%;
-            }
-            p {
-                padding: 50px 0;
-                line-height: 30px;
-                max-width: 80%;
-                text-align: center;
-                margin: 0 auto;
-            }
+    @media screen and (max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
+
+    .left-part,
+    .right-part {
+        padding: 60px;
+
+        span {
+            font-size: 0.75rem;
+        }
+        h3 {
+            margin: 20px 0;
+            @include title;
+            line-height: 28px;
+        }
+        p {
+            text-align: left;
+            line-height: 30px;
+            margin: 30px 0;
+            font-size: 0.8rem;
         }
     }
-    .r-container {
-        display: flex;
-        margin: 0 auto;
-        padding-top: 50px;
-        padding-bottom: 200px;
-        position: relative;
-        &:after {
-            content: "";
-            height: 1px;
-            background: $color1;
-            width: 100%;
-            position: absolute;
-            transform: rotate(90deg);
-            left: -50%;
-            bottom: 50%;
-            overflow: hidden;
-        }
-        .r-element {
-            display: block;
-            align-items: center;
-            text-align: center;
-            width: 80%;
-            margin: 0 auto;
-
-            h4 {
-                font-style: italic;
-                font-weight: 400;
-            }
-            h3 {
-                text-transform: uppercase;
-                font-size: 2rem;
-                padding: 20px 0;
-            }
-            img {
-                height: 80%;
-                max-width: 80%;
-            }
-            p {
-                padding: 50px 0;
-                line-height: 30px;
-                max-width: 80%;
-                text-align: center;
-                margin: 0 auto;
-            }
-        }
+    .left-part {
+        border-right: 1px solid $grey1;
     }
 }
